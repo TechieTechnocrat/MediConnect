@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Hospital Websire using HTml, Sass, Javascript</title>
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="h3" class="nav__logo">
+          <h3>MediConnect</h3>
+        </a>
+        <ul id="nav__items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#specialists">Specialists</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#appointments" class="btn">Make Appointment</a></li>
+        </ul>
+
+        <button id="open__nav-btn"><i class="bx bx-menu"></i></button>
+        <button id="close__nav-btn"><i class="bx bx-x"></i></button>
+      </div>
+    </nav>
+    <!---------------------------------end of navbar ------------------>
+    <header>
+      <div class="container">
+        <div class="header__content">
+          <h1>Healthcare Made Simple, Connected, and Personal!</h1>
+          <p>
+            Seamlessly navigate through a world of healthcare services and
+            connect with top-notch specialists, ensuring personalized care at
+            every step. At MediConnect, Care Meets Connectivity!
+            <!-- Moreover, our
+            user interface allows you to easily schedule appointments, explore a
+            wide range of medical services, access trusted testimonials from
+            satisfied patients, and stay informed with the latest health
+            resources -->
+          </p>
+          <a href="#appointments" class="btn">Make Appointment</a>
+        </div>
+        <div class="header__image">
+          <img src="./assets//header.svg" alt="header image" />
+        </div>
+      </div>
+    </header>
+
+    <section id="services">
+      <h2>Our Services</h2>
+      <p>
+        Our user-friendly interface allows you to easily schedule appointments,
+        explore a wide range of medical services, access trusted testimonials
+        from satisfied patients, and stay informed with the latest health
+        resources
+      </p>
+      <div class="container">
+        <article>
+          <i class="bx bx-book-content"></i>
+          <div>
+            <h4>Online Booking</h4>
+            <small
+              >Experience hassle-free healthcare with our Online Booking service
+              at MediConnect. Effortlessly schedule appointments with our
+              network of renowned specialists, ensuring convenience and timely
+              access to the medical care you need.</small
+            >
+          </div>
+        </article>
+        <article>
+          <i class="bx bxs-capsule"></i>
+          <div>
+            <h4>Telemedicine Consultations</h4>
+            <small>
+              Connect with experienced doctors remotely through our secure
+              telemedicine platform, receiving expert medical advice and
+              treatment without leaving your home.</small
+            >
+          </div>
+        </article>
+        <article>
+          <i class="bx bx-heart"></i>
+          <div>
+            <h4>Health Records Managemen</h4>
+            <small>
+              Effortlessly organize and access your medical records in one
+              secure location, ensuring seamless communication and coordination
+              between healthcare providers for optimal care.</small
+            >
+          </div>
+        </article>
+        <article>
+          <i class="bx bxs-bookmarks"></i>
+          <div>
+            <h4>Health Education Resources</h4>
+            <small
+              >Access a vast library of educational resources, empowering you
+              with valuable information about various health conditions,
+              preventive care, and wellness strategies.
+            </small>
+          </div>
+        </article>
+        <article>
+          <i class="bx bx-revision"></i>
+          <div>
+            <h4>Prescription Refill Requests</h4>
+            <small
+              >Conveniently request prescription refills online, saving you time
+              and ensuring your medications are always available when you need
+              them.</small
+            >
+          </div>
+        </article>
+        <article>
+          <i class="bx bx-phone-call"></i>
+          <div>
+            <h4>Second Opinion Services</h4>
+            <small>
+              Gain peace of mind and make informed decisions about your health
+              by seeking second opinions from our network of specialized medical
+              professionals, ensuring comprehensive and well-rounded care.
+            </small>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="specialists">
+      <h2>Our Top Specialists</h2>
+      <p>
+        At MediConnect, we are proud to have a team of top specialists who are
+        renowned for staying at the forefront of medical advancements to ensure
+        the best possible outcomes for our patients
+      </p>
+      <div class="container">
+        <article>
+          <div class="specialist__image">
+            <img src="./assets/specialist1.jpg" alt="specialist1" />
+          </div>
+          <div class="specialist__details">
+            <h4>Dr. Benjamin Mitchell</h4>
+            <small> Surgery Specialist </small>
+          </div>
+          <div class="specialist__socials">
+            <a href="https://linkedin.com" target="_blank">
+              <i class="bx bxl-linkedin"></i></a
+            ><a href="https://twitter.com" target="_blank">
+              <i class="bx bxl-twitter"></i></a
+            ><a href="https://facebook.com" target="_blank">
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <i class="bx bxl-instagram"></i>
+            </a>
+          </div>
+          <a
+            href="https://api.whatsapp.com/send?phone=+233557097546"
+            class="specialist__whatsapp"
+          >
+            <i class="bx bxl-whatsapp"></i>
+          </a>
+        </article>
+        <article>
+          <div class="specialist__image">
+            <img src="./assets/specialist2.jpg" alt="specialist1" />
+          </div>
+          <div class="specialist__details">
+            <h4>Dr. Mia Foster</h4>
+            <small> Cardiologist </small>
+          </div>
+          <div class="specialist__socials">
+            <a href="https://linkedin.com" target="_blank">
+              <i class="bx bxl-linkedin"></i></a
+            ><a href="https://twitter.com" target="_blank">
+              <i class="bx bxl-twitter"></i></a
+            ><a href="https://facebook.com" target="_blank">
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <i class="bx bxl-instagram"></i>
+            </a>
+          </div>
+          <a
+            href="https://api.whatsapp.com/send?phone=+233557097546"
+            class="specialist__whatsapp"
+          >
+            <i class="bx bxl-whatsapp"></i>
+          </a>
+        </article>
+        <article>
+          <div class="specialist__image">
+            <img src="./assets/specialist3.jpg" alt="specialist1" />
+          </div>
+          <div class="specialist__details">
+            <h4>Dr. Sophia Reynolds</h4>
+            <small> Gastroenterologist Specialist </small>
+          </div>
+          <div class="specialist__socials">
+            <a href="https://linkedin.com" target="_blank">
+              <i class="bx bxl-linkedin"></i></a
+            ><a href="https://twitter.com" target="_blank">
+              <i class="bx bxl-twitter"></i></a
+            ><a href="https://facebook.com" target="_blank">
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <i class="bx bxl-instagram"></i>
+            </a>
+          </div>
+          <a
+            href="https://api.whatsapp.com/send?phone=+233557097546"
+            class="specialist__whatsapp"
+          >
+            <i class="bx bxl-whatsapp"></i>
+          </a>
+        </article>
+        <article>
+          <div class="specialist__image">
+            <img src="./assets/specialist4.jpg" alt="specialist1" />
+          </div>
+          <div class="specialist__details">
+            <h4>Dr. Olivia Brooks</h4>
+            <small> Heart Surgeon </small>
+          </div>
+          <div class="specialist__socials">
+            <a href="https://linkedin.com" target="_blank">
+              <i class="bx bxl-linkedin"></i></a
+            ><a href="https://twitter.com" target="_blank">
+              <i class="bx bxl-twitter"></i></a
+            ><a href="https://facebook.com" target="_blank">
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <i class="bx bxl-instagram"></i>
+            </a>
+          </div>
+          <a
+            href="https://api.whatsapp.com/send?phone=+233557097546"
+            class="specialist__whatsapp"
+          >
+            <i class="bx bxl-whatsapp"></i>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="testimonials" class="swiper mySwiper">
+      <h2>What our Patients say?</h2>
+      <p>Reviews from our family</p>
+      <div class="swiper-wrapper">
+        <article class="swiper-slide">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident,
+            dolore harum quis totam fuga similique dolorum eos doloribus eaque
+            amet fugiat
+          </p>
+          <div class="patient">
+            <div class="avatar">
+              <img src="./assets/avatar1.jpg" alt="patient-one" />
+            </div>
+          </div>
+          <div class="patient__details">
+            <h5>Julia Roberts</h5>
+            <small> Patient</small>
+          </div>
+        </article>
+        <article class="swiper-slide">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident,
+            dolore harum quis totam fuga similique dolorum eos doloribus eaque
+            amet fugiat
+          </p>
+          <div class="patient">
+            <div class="avatar">
+              <img src="./assets/avatar2.jpg" alt="patient-two" />
+            </div>
+          </div>
+          <div class="patient__details">
+            <h5>Sonu Sood</h5>
+            <small> Patient</small>
+          </div>
+        </article>
+        <article class="swiper-slide">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident,
+            dolore harum quis totam fuga similique dolorum eos doloribus eaque
+            amet fugiat
+          </p>
+          <div class="patient">
+            <div class="avatar">
+              <img src="./assets/avatar3.jpg" alt="patient-three" />
+            </div>
+          </div>
+          <div class="patient__details">
+            <h5>Hritik Roshan</h5>
+            <small> Patient</small>
+          </div>
+        </article>
+        <article class="swiper-slide">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident,
+            dolore harum quis totam fuga similique dolorum eos doloribus eaque
+            amet fugiat
+          </p>
+          <div class="patient">
+            <div class="avatar">
+              <img src="./assets/avatar4.jpg" alt="patient-four" />
+            </div>
+          </div>
+          <div class="patient__details">
+            <h5>Vikram Vedha</h5>
+            <small> Patient</small>
+          </div>
+        </article>
+        <article class="swiper-slide">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident,
+            dolore harum quis totam fuga similique dolorum eos doloribus eaque
+            amet fugiat
+          </p>
+          <div class="patient">
+            <div class="avatar">
+              <img src="./assets/avatar5.jpg" alt="patient-five" />
+            </div>
+          </div>
+          <div class="patient__details">
+            <h5>Chunky Pandey</h5>
+            <small> Patient</small>
+          </div>
+        </article>
+        <article class="swiper-slide">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident,
+            dolore harum quis totam fuga similique dolorum eos doloribus eaque
+            amet fugiat
+          </p>
+          <div class="patient">
+            <div class="avatar">
+              <img src="./assets/avatar6.jpg" alt="patient-six" />
+            </div>
+          </div>
+          <div class="patient__details">
+            <h5>Julia Roberts</h5>
+            <small> Patient</small>
+          </div>
+        </article>
+        <article class="swiper-slide">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident,
+            dolore harum quis totam fuga similique dolorum eos doloribus eaque
+            amet fugiat
+          </p>
+          <div class="patient">
+            <div class="avatar">
+              <img src="./assets/avatar7.jpg" alt="patient-seven" />
+            </div>
+          </div>
+          <div class="patient__details">
+            <h5>Arigato Newye</h5>
+            <small> Patient</small>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <section id="appointment">
+      <div class="container">
+        <div class="info">
+          <h2>Get An Appointment</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <article>
+            <div class="info__icon">
+              <i class="bx bx-user"></i>
+            </div>
+            <div>
+              <h4>Experienced doctors</h4>
+              <small>
+                Experienced doctors at Mediconnect bring a wealth of knowledge
+                and expertise to patient care, ensuring top-quality medical
+                services. With years of practice and specialization, they
+                provide accurate diagnoses and personalized treatment plans,
+                instilling confidence and trust in their patients
+              </small>
+            </div>
+          </article>
+          <article>
+            <div class="info__icon">
+              <i class="bx bx-user"></i>
+            </div>
+            <div>
+              <h4>Advanced Technology</h4>
+              <small>
+                Mediconnect utilizes advanced technology to enhance medical
+                diagnostics and treatments, enabling precise and innovative
+                healthcare solutions for improved patient outcomes.
+              </small>
+            </div>
+          </article>
+          <article>
+            <div class="info__icon">
+              <i class="bx bx-user"></i>
+            </div>
+            <div>
+              <h4>Emergencies</h4>
+              <small>
+                In emergencies, Mediconnect provides swift and efficient medical
+                response, ensuring immediate care and support during critical
+                situations.
+              </small>
+            </div>
+          </article>
+        </div>
+        <form action="https://formspree.io/f/mjvddwkp" method="POST">
+          <div class="form__group">
+            <label for="name"> Name </label>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              name="Pateint's name"
+              id="name"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <label for="phone"> Phone Number </label>
+            <input
+              type="number"
+              placeholder="Enter your phone number"
+              name="Pateint's contact"
+              id="phone"
+              required
+            />
+          </div>
+
+          <div class="form__group">
+            <label for="date"> Date </label>
+            <input
+              type="date"
+              placeholder="Choose a date"
+              name="Date"
+              id="date"
+              required
+            />
+          </div>
+
+          <div class="form__group">
+            <label for="department"> Select Department </label>
+            <select name="Department" id="department" required>
+              <option value="Department one">Department one</option>
+              <option value="Department two">Department two</option>
+              <option value="Department three">Department three</option>
+              <option value="Department four">Department four</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="doctor"> Select Doctor </label>
+            <select name="Doctor" id="doctor" required>
+              <option value="Doctor one">Doctor one</option>
+              <option value="Doctor two">Doctor two</option>
+              <option value="Doctor three">Doctor three</option>
+              <option value="Doctor four">Doctor four</option>
+              <option value="Doctor four">Doctor four</option>
+            </select>
+          </div>
+
+          <div class="form__group">
+            <label for="message"> Additional Message </label>
+            <textarea
+              name="Added Message"
+              id="message"
+              rows="6"
+              placeholder="Add a message"
+              required
+            ></textarea>
+          </div>
+
+          <input type="submit" value="Submit Request" class="btn-primary" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <article>
+          <a href="#" class="footer_logo">
+            <h3>MEDICONNECT</h3>
+          </a>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <div>
+            <i class="bx bxs-phone"></i>
+            <small>+25666778</small>
+          </div>
+          <div>
+            <i class="bx bx-mail-send"></i>
+            <small>mediconnectxyz</small>
+          </div>
+        </article>
+        <article>
+          <h3>SUPPORT</h3>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Purchasing Policy</a>
+          <a href="#">Terms and conditions</a>
+          <a href="#">Carrer</a>
+        </article>
+
+        <article>
+          <h3>MENU</h3>
+          <a href="#">Home</a>
+          <a href="#services">Services</a>
+          <a href="#specialists">Specialists</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#appointment" class="btn-primary">Get Appointment</a>
+        </article>
+
+        <article>
+          <h3>Contact Us</h3>
+          <p>Press</p>
+          <p>FAQs</p>
+          <div class="footer__socials">
+            <a href="https://linkedin.com" target="_blank">
+              <i class="bx bxl-linkedin"></i></a
+            ><a href="https://twitter.com" target="_blank">
+              <i class="bx bxl-twitter"></i></a
+            ><a href="https://facebook.com" target="_blank">
+              <i class="bx bxl-facebook"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <i class="bx bxl-instagram"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <div class="copyright">
+        <small>&copy; Copyright Mediconnect @sonal. All Rights Reserved</small>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
